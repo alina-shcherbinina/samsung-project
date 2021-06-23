@@ -2,6 +2,7 @@ package com.example.samsungproject;
 
 import android.app.ActionBar;
 import android.os.Bundle;
+import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
@@ -17,17 +18,14 @@ public class WebViewActivity extends AppCompatActivity {
 //        ab.hide();
 
         final WebView wv = findViewById(R.id.wv);
-        wv.setWebViewClient(new WebViewClient());
-
         wv.getSettings().setJavaScriptEnabled(true);
 
-        String folderPath = "file:///android_asset/";
+        wv.setWebChromeClient(new WebChromeClient());
 
+        String folderPath = "file:///android_asset/";
         String fileName = "index.html";
 
-
         String file = folderPath + fileName;
-
 
         wv.loadUrl(file);
     }

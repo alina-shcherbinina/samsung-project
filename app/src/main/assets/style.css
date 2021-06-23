@@ -2,13 +2,18 @@
     margin-bottom: 5pt;
     margin-top: 5pt
     }
+
+katex-element {
+    padding: 2pt;
+    font-size: 2em !important;
+}
 .block {
     display: block
     }
 
 .block.align {
     font-size: 1em;
-    margin-bottom: 0;
+    margin-bottom: 5pt;
     margin-left: 5pt;
     margin-right: 5pt;
     margin-top: 0;
@@ -22,7 +27,7 @@
     font-weight: bold;
     line-height: 1.2;
     margin-bottom: 1em;
-    margin-left: 0;
+    margin-left: 5pt;
     margin-right: 0;
     margin-top: 1em
     }
@@ -30,11 +35,13 @@
 .list-item {
     display: list-item
     }
+
 .image {
     height: auto;
     max-width: 100%;
     width: auto
     }
+
 .lined-box {
     border-bottom-color: currentColor;
     border-bottom-style: solid;
@@ -49,6 +56,7 @@
     border-top-style: solid;
     border-top-width: medium;
     display: block
+
     }
 
 
@@ -59,12 +67,53 @@
     font-family: "Times New Roman", serif;
     font-size: 1em;
     }
+
 .font.italic {
     font-style: italic;
     }
+
 .font.bold {
     font-weight: bold
     }
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
 
+.content-post {
+        padding-bottom: 5px; 
+        position: sticky;
+        top: 0px;
+        background:white;
+    }
+     
+.content-post ul {
+        margin-top: 20px;
+    }
+     
+.content-post li {
+        list-style: none;
+        padding: 1px 0;
+    }
+     
+.content-post li a {
+        border-bottom: dotted 1px;
+        text-decoration: none;
+    }
 
+.button{
+        background:rgb(214, 214, 214);
+        padding: 10px 20px;
+        transition-duration: 0.4s;
+        vertical-align:middle;
+        border: 2px solid rgb(214, 214, 214);
+        text-align: center;
+        color: #000000;
+        border-radius: 5px;
+        cursor: pointer;
+    }
 
+.button:hover{
+        background: white;
+    }
