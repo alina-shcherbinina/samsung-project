@@ -16,6 +16,7 @@ public class RecyclerViewActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().hide();
         setContentView(R.layout.activity_recycler_view);
 
         list = new ArrayList<>();
@@ -24,7 +25,7 @@ public class RecyclerViewActivity extends AppCompatActivity {
         String[] titles = res.getStringArray(R.array.titles);
         String[] desc = res.getStringArray(R.array.desc);
         for (int i=0; i<12; i++) {
-            list.add(new ItemClass(getResources().getIdentifier("const_"+i+".jpg", "drawable", "samsungproject"),
+            list.add(new ItemClass(getResources().getIdentifier("const_"+i, "raw", "com.example.samsungproject"),
                     titles[i],
                     desc[i]));
         }
