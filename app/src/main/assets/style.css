@@ -1,11 +1,16 @@
 @page {
     margin-bottom: 5pt;
-    margin-top: 5pt
+    margin-top: 5pt;
+    
     }
 
 katex-element {
     padding: 2pt;
     font-size: 2em !important;
+}
+
+body {
+    background-color: #FFFFFF;
 }
 .block {
     display: block
@@ -64,8 +69,9 @@ katex-element {
 
     
 .font {
-    font-family: "Times New Roman", serif;
+    font-family: "Georgia", serif;
     font-size: 1em;
+    color: #04040c;
     }
 
 .font.italic {
@@ -75,6 +81,7 @@ katex-element {
 .font.bold {
     font-weight: bold
     }
+
 .container {
     display: flex;
     flex-direction: row;
@@ -82,7 +89,6 @@ katex-element {
 }
 
 .content-post {
-        padding-bottom: 5px; 
         position: sticky;
         top: 0px;
         background:white;
@@ -94,26 +100,23 @@ katex-element {
      
 .content-post li {
         list-style: none;
-        padding: 1px 0;
+        padding-bottom: 5pt;
     }
      
 .content-post li a {
         border-bottom: dotted 1px;
         text-decoration: none;
+        color: #6d809f;
     }
 
 .button{
-        background:rgb(214, 214, 214);
+        background:#9ca0b9;
         padding: 10px 20px;
         transition-duration: 0.4s;
         vertical-align:middle;
-        border: 2px solid rgb(214, 214, 214);
+        border: 5px solid #9ca0b9;
         text-align: center;
-        color: #000000;
+        color: #FFFFFF;
         border-radius: 5px;
         cursor: pointer;
-    }
-
-.button:hover{
-        background: white;
     }

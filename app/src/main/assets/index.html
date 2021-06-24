@@ -40,7 +40,7 @@
 <span class="font bold">
     противостоянием.
     </span></p>
-    <div class="block"> <img src="images/000000.gif" class="image" />
+    <div class="block"> <img src="images/000000.gif" onclick="location.href=this.src;" class="image" />
 <p class="block align">
     <span class="font">Попятное движение Марса на небе в 2018 году (показаны положения планеты каждые 5 дней)</span></p></div>
 <p class="block align">
@@ -493,7 +493,12 @@
 <p class="block align"><span class="font">Особенно большое влияние возмущения оказывают на движение комет. Кометы имеют очень маленькие (по сравнению с планетами) массы и движутся по очень вытянутым орбитам. Когда они проходят мимо планет (особенно планет-гигантов), их орбиты ощутимым образом меняются. В некоторых случаях взаимодействие с планетами приводит к значительному росту скоростей комет, вплоть до скоростей убегания. В результате кометы могут переходить на незамкнутые (параболические, иногда гиперболические) орбиты и покидать Солнечную систему.</span></p>
 </div>
 
-
+<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+    <div class="w3-modal-content w3-animate-zoom">
+      <img id="img01" style="width:100%">
+    </div>
+  </div>
 <script>    
             jQuery(document).ready(function() {
             new WbdContentPost({
@@ -504,7 +509,33 @@
                 hidden: true
             });
         });
+        function ChangeFont(font) {
+          var elements = document.getElementsByClassName("font");
+           for (var i = 0; i < elements.length; i++) {
+                var element = elements[i];
+                element.style.fontFamily = font;
+            }
+         };
 
+         function ChangeTheme(txt_color, bg_color, ct_color) {
+              var elements = document.getElementsByClassName("font");
+               for (var i = 0; i < elements.length; i++) {
+                    var element = elements[i];
+                    element.style.color = txt_color;
+                };
+
+               var contentElements = document.querySelectorAll(".a");
+               for (var i = 0; i < contentElements.length; i++) {
+                    var element1 = elements1[i];
+                    element1.style.color = ct_color;
+                };
+
+               var body = document.querySelector("body");
+               body.style.backgroundColor = bg_color;
+
+               var contentBody = document.getElementById("content-post");
+               contentBody.style.backgroundColor = bg_color;
+         };
 
         // Модуль оглавления статьи
         var WbdContentPost = (function($) {

@@ -7,18 +7,17 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().hide();
         setContentView(R.layout.activity_main);
-//        ActionBar ab = getActionBar();
-//        ab.hide();
 
-
-        Button webview_btn;
+        ImageButton webview_btn;
 
         webview_btn = findViewById(R.id.webview_btn);
 
@@ -30,5 +29,18 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        ImageButton btn_recycler;
+        btn_recycler = findViewById(R.id.btn_recycler);
+        btn_recycler.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, RecyclerViewActivity.class);
+
+                startActivity(intent);
+            }
+        });
+
+
     }
 }
