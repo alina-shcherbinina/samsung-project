@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="40dp"
         tools:srcCompat="@tools:sample/avatars" />
 
 
@@ -21,18 +21,20 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/const_img"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="30dp"
         android:text="TextView"
         android:textColor="#000000"
-        android:textSize="18sp" />
+        android:textSize="30sp" />
 
     <TextView
         android:id="@+id/const_desc"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/const_title"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="40dp"
         android:text="TextView"
-        android:textColor="#000000" />
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp" />
 </RelativeLayout>

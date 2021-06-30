@@ -44,7 +44,6 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="20dp"
-            android:foregroundGravity="center_vertical|center|center_horizontal"
             android:gravity="clip_vertical|center_horizontal"
             android:text="@string/menu" />
 
@@ -54,7 +53,6 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="20dp"
-            android:foregroundGravity="center_vertical|center|center_horizontal"
             android:gravity="clip_vertical|center_horizontal"
             android:text="@string/testagain" />
     </LinearLayout>
