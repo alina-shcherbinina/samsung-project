@@ -42,5 +42,16 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+        ImageButton test_btn;
+        test_btn = findViewById(R.id.test_btn);
+        test_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, QuizActivity.class);
+
+                startActivity(intent);
+            }
+        });
+
     }
 }

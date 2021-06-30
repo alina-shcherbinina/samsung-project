@@ -1,5 +1,12 @@
 <resources>
     <string name="app_name">samsung project</string>
+    <string name="your_result">\"Ваш результат \"</string>
+    <string name="out">\" из \"</string>
+    <string name="again">Пожалуйтса, попробуйте пройти тест еще раз!</string>
+    <string name="goodjob">Хорошая работа!</string>
+    <string name="fine">Есть ошибки, попробуйте пройти тест заново :^)</string>
+    <string name="testagain">пройти снова</string>
+    <string name="menu">меню</string>
 
     <string-array name="titles">
         <item>Овен</item>
@@ -30,4 +37,35 @@
         <item>Водолей</item>
         <item>Рыбы</item>
     </string-array>
+
+    <string-array name="quiz_1">
+        <item name="id">1</item>
+        <item name="title">Титул</item>
+        <item name="quiz_1_q">@array/quiz_1_questions</item>
+        <item name="quiz_1_a">@array/quiz_1_answers</item>
+        <item name="quiz_1_c">@array/quiz_1_correct</item>
+    </string-array>
+
+    <array name="quiz_1_questions">
+        <item>Вопрос 1?</item>
+        <item>Вопрос 2?</item>
+        <item>Вопрос 3?</item>
+        <item>Вопрос 4?</item>
+    </array>
+
+    <array name="quiz_1_answers">
+        <item>fish; Answer 2; Answer 3; Answer 4</item>
+        <item>Answer 1;fish; Answer 3; Answer 4</item>
+        <item>Answer 1; Answer 2;fish; Answer 4</item>
+        <item>Answer 1; Answer 2; Answer 3;fish</item>
+    </array>
+
+    <array name="quiz_1_correct">
+        <item>fish</item>
+        <item>fish</item>
+        <item>fish</item>
+        <item>fish</item>
+    </array>
+
+
 </resources>
