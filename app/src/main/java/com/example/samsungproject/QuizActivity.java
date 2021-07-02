@@ -27,6 +27,7 @@ public class QuizActivity extends AppCompatActivity  implements View.OnClickList
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().hide();
         setContentView(R.layout.activity_quiz_activiy);
         step = 0;
         score = 0;
